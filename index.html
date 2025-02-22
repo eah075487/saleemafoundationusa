@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saleema Foundation</title>
+    <style>
+        body { 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            color: #333; 
+            text-align: center; 
+        }
+        header { background-color: #f8f8f8; color: #333; padding: 20px 0; text-align: center; border-bottom: 1px solid #e7e7e7; }
+        main { padding: 40px; max-width: 90%; margin: 0 auto; }
+        h1, h2 { font-weight: 300; }
+        p { line-height: 1.6; }
+        footer { background-color: #f8f8f8; text-align: center; padding: 20px 0; border-top: 1px solid #e7e7e7; position: relative; width: 100%; bottom: 0; }
+        a { color: #007aff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .slider { width: 100%; margin: 20px auto; overflow: hidden; }
+        .slides img { width: 33.33%; flex-shrink: 0; }
+
+        @media (max-width: 768px) {
+            .slides img { width: 50%; }
+        }
+
+        @media (max-width: 480px) {
+            .slides img { width: 100%; }
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="saleema foundation logo size 1.png" alt="Saleema Foundation Logo" style="max-width: 200px; height: auto; display: block; margin: 0 auto; filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));">
+        <h1>Saleema Foundation</h1>
+    </header>
+    <main>
+        <h2>About Us</h2>
+        <p>Saleema Foundation Mansfield, Texas, USA.</p>
+        <h2>Our Vision</h2>
+        <p>Saleema Foundation is an American nonprofit organization dedicated to improving the lives of needy children and families and fostering tolerance and understanding between people of different faiths.</p>
+        <h2>Our Mission</h2>
+        <p>Empower needy children, women and the elderly with first aid, education and entrepreneurship gifts to help them better their lives and develop a better relationship with the Creator, with one's self and other fellow human beings.</p>
+        <h2>Our Services</h2>
+        <p>Saleema Foundation is a U.S.-based nonprofit organization committed to enhancing the quality of life for vulnerable children and families while promoting interfaith dialogue and understanding.</p>
+        <div class="slider" style="display: flex; justify-content: center; flex-wrap: wrap; max-width: 100%; margin: 20px auto;">
+            <img src="slider1/Saleema-Education.png" alt="Education" style="width: 150px; margin: 10px;">
+            <img src="slider1/Saleema-Food-Services.png" alt="Food Services" style="width: 150px; margin: 10px;">
+            <img src="slider1/Saleema-Home-&-Shelter.png" alt="Home & Shelter" style="width: 150px; margin: 10px;">
+            <img src="slider1/Saleema-Masjid-&-Mushala.png" alt="Masjid & Mushala" style="width: 150px; margin: 10px;">
+            <img src="slider1/Saleema-Medical-Services.png" alt="Medical Services" style="width: 150px; margin: 10px;">
+            <img src="slider1/Saleema-Shadaqah-&-Charity.png" alt="Shadaqah & Charity" style="width: 150px; margin: 10px;">
+            <img src="slider1/Saleema-Village.png" alt="Village" style="width: 150px; margin: 10px;">
+            <img src="slider1/Saleema-Academy.png" alt="Academy" style="width: 150px; margin: 10px;">
+        </div>
+        <h2>Legal Information</h2>
+        <p>Saleema Foundation is a registered 501 (C) 3 Corporation in the state of Texas, USA, EIN 81-1977012.</p>
+        <p></p>Review our filings with the US Internal Revenue Service (IRS) <a href="https://apps.irs.gov/app/eos/" target="_blank">here</a>.</p>
+        <button onclick="document.getElementById('contactForm').style.display='block'">Learn More</button>
+
+        <div id="contactForm" style="display:none; margin-top: 20px;">
+            <h2>Contact Us</h2>
+            <form action="mailto:eahamdan@saleemafoundationusa.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </main>
+    <section style="background-color: #f0f0f0; padding: 40px 0; text-align: center;">
+        <!-- Image removed -->
+    </section>
+    <footer>
+        <p>&copy; <span id="year"></span> Saleema Foundation</p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html> 
