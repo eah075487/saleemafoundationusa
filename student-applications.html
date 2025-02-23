@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Applications</title>
+    <style>
+        body { 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            color: #333; 
+            text-align: center; 
+        }
+        header, footer { background-color: #f8f8f8; color: #333; padding: 20px 0; text-align: center; border-bottom: 1px solid #e7e7e7; }
+        main { padding: 40px; max-width: 90%; margin: 0 auto; }
+        h1, h2 { font-weight: 300; }
+        p { line-height: 1.6; }
+        a { color: #007aff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        form { text-align: left; max-width: 600px; margin: 0 auto; }
+        label { display: block; margin-top: 10px; }
+        input, select { width: 100%; padding: 8px; margin-top: 5px; }
+        input[type="submit"] { background-color: #007aff; color: white; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Applications</h1>
+        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+            <a href="index.html"><img src="png/saleema Foundation.png" alt="Home" style="width: 50px;"></a>
+            <a href="saleema-academy.html"><img src="png/saleema Academy.png" alt="Academy" style="width: 50px;"></a>
+        </div>
+    </header>
+    <main>
+        <form action="mailto:eahamdan@gmail.com,raouf426@gmail.com,ashaqlaih@yahoo.com" method="post" enctype="text/plain">
+            <label for="studentFirstName">Student First Name*</label>
+            <input type="text" id="studentFirstName" name="studentFirstName" required>
+
+            <label for="studentMiddleName">Student Middle Name</label>
+            <input type="text" id="studentMiddleName" name="studentMiddleName">
+
+            <label for="studentLastName">Student Last Name*</label>
+            <input type="text" id="studentLastName" name="studentLastName" required>
+
+            <label for="dob">Date of Birth*</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender*</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="address">Student Address*</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="city">City*</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">State/Province*</label>
+            <select id="state" name="state" required>
+                <option value="Texas" selected>Texas</option>
+                <!-- Add other states as needed -->
+            </select>
+
+            <label for="zip">Zip/Postal*</label>
+            <input type="text" id="zip" name="zip" required>
+
+            <label for="restrictions">Food/Medical Restrictions*</label>
+            <input type="text" id="restrictions" name="restrictions" value="None" required>
+
+            <label for="guardianName">Legal Guardian Full Name*</label>
+            <input type="text" id="guardianName" name="guardianName" required>
+
+            <label for="fatherName">Legal Father Full Name</label>
+            <input type="text" id="fatherName" name="fatherName">
+
+            <label for="fatherAddress">Father's Address</label>
+            <input type="text" id="fatherAddress" name="fatherAddress">
+
+            <label for="fatherEmail">Father's Email</label>
+            <input type="email" id="fatherEmail" name="fatherEmail">
+
+            <label for="motherName">Legal Mother Full Name</label>
+            <input type="text" id="motherName" name="motherName">
+
+            <label for="motherAddress">Mother's Address</label>
+            <input type="text" id="motherAddress" name="motherAddress">
+
+            <label for="motherEmail">Mother's Email</label>
+            <input type="email" id="motherEmail" name="motherEmail">
+
+            <label for="applicationDate">Application Date*</label>
+            <input type="date" id="applicationDate" name="applicationDate" required>
+
+            <h2>Policy Review & Acceptance</h2>
+            <p>Please read and click indicating understanding and acceptance.</p>
+            <p>I understand that participation in Saleema Academy's Weekend program includes risk of injury that may range in severity from minor to disabling to even death. Although serious injuries are not common in supervised school programs, it is impossible to eliminate the risk. I/we understand that my child's participation in Saleema Academy's weekend program is voluntary and that my child and I/we are free to choose not to participate. I/we consent to my child's participation in any of the approved school activities. I understand that Saleema Academy, their employees, officers, volunteers and agents will not be liable for personal injuries and/or property damage as a result of my child's participation in such programs or activities. I/We, on behalf of myself and my minor child, agree to release, hold harmless and indemnify Saleema Academy, their employees, officers and agents, from any loss, cost, damage and/or expense of any nature, including all attorneys' fees and costs which I or my child may have resulting, either directly or indirectly, from my child's participation in Saleema Academy's programs. I/We give permission for our son/daughter to participate in all Saleema Academy activities, and do forever release Saleema Academy and its teachers, staff, volunteers and agents from any and all actions, all known and unknown personal injuries or property damage of said minor arising out of said activities, and also all claims or right of action for damages which said minor has or hereafter may acquire. I also have made arrangements to secure timely pick up of my child at the conclusion of each scheduled program event, meeting, or practice. I also understand that the Late Fee policy will apply. I/We also give permission to Saleema Academy to use my or my child's photograph publically. I understand that the images may be used in print publications, online publications, presentations, websites, and social media. I also understand that no royalty, fee or other compensation shall become payable to me by reason of such use. In the event of an emergency, I hereby certify that I am the parent/lawful guardian of the student listed above and grant to Saleema Academy, its employees and agents full authority to take whatever action they may consider appropriate under the circumstances involved regarding the health and safety of my child and authorize them to obtain emergency medical or dental services for my child, if necessary, at my expense. By signing this Agreement, I/we acknowledge that we have read and understand this document and accept the risk and responsibility of participation in Saleema Academy weekend programs.</p>
+            <label>
+                <input type="checkbox" name="policyAcceptance" required> I have read and accept the policy.
+            </label>
+
+            <label for="signature">Signature</label>
+            <canvas id="signature-pad" width="600" height="200" style="border:1px solid #000000;"></canvas>
+            <button type="button" onclick="clearSignature()">Clear</button>
+            <input type="hidden" id="signature" name="signature">
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Saleema Foundation</p>
+        <a href="saleema-academy.html">Back to Saleema Academy</a>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        var canvas = document.getElementById('signature-pad');
+        var ctx = canvas.getContext('2d');
+        var drawing = false;
+
+        canvas.addEventListener('mousedown', function(e) {
+            drawing = true;
+            ctx.moveTo(e.offsetX, e.offsetY);
+        });
+
+        canvas.addEventListener('mousemove', function(e) {
+            if (drawing) {
+                ctx.lineTo(e.offsetX, e.offsetY);
+                ctx.stroke();
+            }
+        });
+
+        canvas.addEventListener('mouseup', function() {
+            drawing = false;
+            document.getElementById('signature').value = canvas.toDataURL();
+        });
+
+        canvas.addEventListener('mouseleave', function() {
+            drawing = false;
+        });
+
+        function clearSignature() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            document.getElementById('signature').value = '';
+        }
+    </script>
+</body>
+</html> 
